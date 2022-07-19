@@ -6,8 +6,10 @@ import random, string
 char = string.ascii_uppercase + '!@#$%&-+=/?_/()' + string.digits + string.ascii_lowercase
 
 # Clear terminal
-system('cls') # Windows
-system('clear') # MAC and linuX
+try:
+    system('cls') # Windows
+except:
+    system('clear') # MAC and linuX
 
 how_long = int(input('Password Length -- '))
 how_much = int(input('Quantity? -- '))
