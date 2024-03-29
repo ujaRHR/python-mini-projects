@@ -3,7 +3,7 @@ from plyer import notification
 
 state = None
 try:
-    state = "Script is working fine..."
+    state = "Script is running..."
 except:
     print("Please! Check your internet connection")
 
